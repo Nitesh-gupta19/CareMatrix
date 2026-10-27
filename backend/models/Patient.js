@@ -53,7 +53,5 @@ const patientSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// patientId already unique via schema option; index kept explicit for clarity.
-patientSchema.index({ patientId: 1 });
 
 module.exports = mongoose.model("Patient", patientSchema);
